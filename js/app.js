@@ -64,3 +64,57 @@ if (cartoonCrush === 'yes' || cartoonCrush === 'y'){
   // console.log('You need to answer with a \'yes\' or a \'no\'');
   alert('You need to answer with a \'yes\' or a \'no\'');
 }
+
+let attemptsRemaining = 4;
+
+// let age = prompt('Guess my age!').toLowerCase();
+// if (age === '21'){
+//   alert('That is correct! I am 21 years old!');
+// } while (attemptsRemaining){
+//   attemptsRemaining--;
+//   alert(`I am in the while loop. I have ${attemptsRemaining} attempts remaining`);
+// } break (age === true);
+
+// let attempts = 4;
+// for (let i = attempts; i > 0; i--){
+//   alert(`I am in the while loop. I have ${i - 1} attempts remaining`);
+// }
+
+// for (let i = 0; i < 4; i++);
+
+while (attemptsRemaining > 0)
+{
+  attemptsRemaining--;
+  let ageGuess = prompt('Guess my age!');
+  if(ageGuess === 21)
+  {
+    alert('You guessed it correctly! I am 21!');
+    break;
+  }
+  else if (ageGuess > 21)
+  {
+    alert(`Too high! I have ${attemptsRemaining} attempts remaining!`);
+  }
+  else if (ageGuess < 21 && ageGuess > 0)
+  {
+    alert(`Too low! I have ${attemptsRemaining} attempts remaining!`);
+  }
+  else 
+  {
+    alert(`invaild input! I have ${attemptsRemaining} attempts remaining!`);
+  }
+}
+
+
+
+// alert(`I am in the while loop. I have ${attemptsRemaining} attempts remaining`);
+
+
+// let ageGuess = prompt('Guess my age!').toLowerCase();
+// if(ageGuess === '21'){
+//   alert('You guessed it correctly! I am 21!');
+// } else if (ageGuess > '21'){
+//   alert('Too high!');
+// } else if (ageGuess < '21'){
+//   alert('Too low!');
+// }

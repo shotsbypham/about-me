@@ -1,26 +1,32 @@
 /* w3school best css cheatsheet */
+/* *{
+  This changes the way "width" is calculated 
+  box-sizing: border-box;
+} */
+
 h1{
   font-size: 4rem;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 1rem;
 }
 
 body{
   font-family: 'Courier New', Courier, monospace;
   background-color: blanchedalmond;
-  margin: 40px;
+  margin: 1rem;
   
 }
 
 img{
   max-width: 20%;
   float: left;
-  margin-right: 40px;
+  margin-right: 2rem;
+  padding: 30px;
 }
 
 p{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   
 }
 
