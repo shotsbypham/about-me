@@ -78,32 +78,35 @@ function cartoonCrush() {
   }
 }
 cartoonCrush();
-let attemptsRemaining = 4;
+function ageGuess() {
+  let attemptsRemaining = 4;
 
-while (attemptsRemaining >= 1) {
-  attemptsRemaining--;
-  let ageGuess = prompt('Guess my age!');
-  //parseInt changes the data guesses into a number which makes the === vaild
-  ageGuess = parseInt(ageGuess);
-  if (ageGuess === 21) {
-    alert('You guessed it correctly! I am 21!');
-    correctAnswer++;
-    break;
-  }
-  else if (ageGuess > 21) {
-    alert(`Too high! You have ${attemptsRemaining} attempts remaining!`);
-  }
-  else if (ageGuess < 21 && ageGuess > 0) {
-    alert(`Too low! You have ${attemptsRemaining} attempts remaining!`);
-  }
-  else {
-    alert(`invaild input! You have ${attemptsRemaining} attempts remaining!`);
-  }
-  if (attemptsRemaining === 0) {
-    alert('You are out of attempts! The correct answer was 21!');
-  }
+  while (attemptsRemaining >= 1) {
+    attemptsRemaining--;
+    let ageGuess = prompt('Guess my age!');
+    //parseInt changes the data guesses into a number which makes the === vaild
+    ageGuess = parseInt(ageGuess);
+    if (ageGuess === 21) {
+      alert('You guessed it correctly! I am 21!');
+      correctAnswer++;
+      break;
+    }
+    else if (ageGuess > 21) {
+      alert(`Too high! You have ${attemptsRemaining} attempts remaining!`);
+    }
+    else if (ageGuess < 21 && ageGuess > 0) {
+      alert(`Too low! You have ${attemptsRemaining} attempts remaining!`);
+    }
+    else {
+      alert(`invaild input! You have ${attemptsRemaining} attempts remaining!`);
+    }
+    if (attemptsRemaining === 0) {
+      alert('You are out of attempts! The correct answer was 21!');
+    }
 
+  }
 }
+ageGuess();
 
 let favVideogame = ['valorant', 'genshin impact', 'minecraft'];
 let guessesRemaining = 4;
