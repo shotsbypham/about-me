@@ -72,12 +72,12 @@ if (cartoonCrush === 'yes' || cartoonCrush === 'y') {
 
 let attemptsRemaining = 4;
 
-while (attemptsRemaining >= 1) {
+while (attemptsRemaining >= 1){
   attemptsRemaining--;
   let ageGuess = prompt('Guess my age!');
   //parseInt changes the data guesses into a number which makes the === vaild
   ageGuess = parseInt(ageGuess);
-  if (ageGuess === 21) {
+  if (ageGuess === 21){
     alert('You guessed it correctly! I am 21!');
     function nameTrina() {
       let nameTrina = prompt('Is my name Trina?').toLowerCase();
@@ -91,8 +91,7 @@ while (attemptsRemaining >= 1) {
       } else {
         // console.log('You need to answer with a \'yes\' or a \'no\'');
         alert('You need to answer with a \'yes\' or a \'no\'');
-      }
-  else if (ageGuess > 21) {
+      } else if (ageGuess > 21) {
         alert(`Too high! You have ${attemptsRemaining} attempts remaining!`);
       }
       else if (ageGuess < 21 && ageGuess > 0) {
@@ -104,9 +103,9 @@ while (attemptsRemaining >= 1) {
       if (attemptsRemaining === 0) {
         alert('You are out of attempts! The correct answer was 21!');
       }
-
     }
     nameTrina();
+    
     function ownDogs() {
       let ownDogs = prompt('Do I own dogs?').toLowerCase();
       if (ownDogs === 'yes' || ownDogs === 'y') {
@@ -237,5 +236,5 @@ while (attemptsRemaining >= 1) {
         }
       }
       favVideogame();
-      
+
       alert(firstName + ` scored ${correctAnswer} out of 7 questions correctly.`)
