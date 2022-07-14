@@ -21,19 +21,21 @@ function nameTrina() {
   }
 }
 nameTrina();
-let ownDogs = prompt('Do I own dogs?').toLowerCase();
-if (ownDogs === 'yes' || ownDogs === 'y') {
-  // console.log('Yes, I do own dogs, 2 of them in fact!');
-  alert('Yes, I do own dogs, 2 of them in fact!');
-  correctAnswer++;
-} else if (ownDogs === 'no' || ownDogs === 'n') {
-  // console.log('Sorry, you are wrong, I actually own 2 dogs.');
-  alert('Sorry, you are wrong, I actually own 2 dogs.');
-} else {
-  // console.log('You need to answer with a \'yes\' or a \'no\'');
-  alert('You need to answer with a \'yes\' or a \'no\'');
+function ownDogs() {
+  let ownDogs = prompt('Do I own dogs?').toLowerCase();
+  if (ownDogs === 'yes' || ownDogs === 'y') {
+    // console.log('Yes, I do own dogs, 2 of them in fact!');
+    alert('Yes, I do own dogs, 2 of them in fact!');
+    correctAnswer++;
+  } else if (ownDogs === 'no' || ownDogs === 'n') {
+    // console.log('Sorry, you are wrong, I actually own 2 dogs.');
+    alert('Sorry, you are wrong, I actually own 2 dogs.');
+  } else {
+    // console.log('You need to answer with a \'yes\' or a \'no\'');
+    alert('You need to answer with a \'yes\' or a \'no\'');
+  }
 }
-
+ownDogs();
 let livesInSeattle = prompt('Do I live in Seattle?').toLowerCase();
 if (livesInSeattle === 'yes' || livesInSeattle === 'y') {
   // console.log('Yes, I do live in Seattle');
