@@ -48,19 +48,21 @@ function livesInSeattle() {
   }
 }
 livesInSeattle();
-let hideSnack = prompt('Have I ever hidden a snack so that nobody else would find it and eat it first?').toLowerCase();
-if (hideSnack === 'yes' || hideSnack === 'y') {
-  // console.log('If you grew up with other siblings, you would have definitely hidden a snack!');
-  alert('If you grew up with other siblings, you would have definitely hidden a snack!');
-  correctAnswer++;
-} else if (hideSnack === 'no' || hideSnack === 'n') {
-  // console.log('I am unfortunately not a selfless person, whoops!');
-  alert('I am unfortunately not a selfless person, whoops!');
-} else {
-  // console.log('You need to answer with a \'yes\' or a \'no\'');
-  alert('You need to answer with a \'yes\' or a \'no\'');
+function hideSnack() {
+  let hideSnack = prompt('Have I ever hidden a snack so that nobody else would find it and eat it first?').toLowerCase();
+  if (hideSnack === 'yes' || hideSnack === 'y') {
+    // console.log('If you grew up with other siblings, you would have definitely hidden a snack!');
+    alert('If you grew up with other siblings, you would have definitely hidden a snack!');
+    correctAnswer++;
+  } else if (hideSnack === 'no' || hideSnack === 'n') {
+    // console.log('I am unfortunately not a selfless person, whoops!');
+    alert('I am unfortunately not a selfless person, whoops!');
+  } else {
+    // console.log('You need to answer with a \'yes\' or a \'no\'');
+    alert('You need to answer with a \'yes\' or a \'no\'');
+  }
 }
-
+hideSnack();
 let cartoonCrush = prompt('Did I ever have a crush on a cartoon character?').toLowerCase();
 if (cartoonCrush === 'yes' || cartoonCrush === 'y') {
   // console.log('Of course I have, have you ever seen Tadashi Hamada from Big Hero 6??!');
