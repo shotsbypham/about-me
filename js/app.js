@@ -107,28 +107,29 @@ function ageGuess() {
   }
 }
 ageGuess();
-
-let favVideogame = ['valorant', 'genshin impact', 'minecraft'];
-let guessesRemaining = 4;
-let guessIsCorrect = false;
-while (guessesRemaining && !guessIsCorrect) {
-  guessesRemaining--;
-  let videogameGuess = prompt('Can you guess one of my favorite video games?').toLowerCase();
-  for (let i = 0; i < favVideogame.length; i++) {
-    if (videogameGuess === favVideogame[i]) {
-      alert(videogameGuess + ' is one of my favorite video games!');
-      correctAnswer++;
-      guessIsCorrect = true;
-      break;
+function favVideogame() {
+  let favVideogame = ['valorant', 'genshin impact', 'minecraft'];
+  let guessesRemaining = 4;
+  let guessIsCorrect = false;
+  while (guessesRemaining && !guessIsCorrect) {
+    guessesRemaining--;
+    let videogameGuess = prompt('Can you guess one of my favorite video games?').toLowerCase();
+    for (let i = 0; i < favVideogame.length; i++) {
+      if (videogameGuess === favVideogame[i]) {
+        alert(videogameGuess + ' is one of my favorite video games!');
+        correctAnswer++;
+        guessIsCorrect = true;
+        break;
+      }
+      else if (i === favVideogame.length) {
+        alert(videogameGuess + ` is not one of my favorite video games. You have ${guessesRemaining} guesses remaining!`);
+      }
+      else {
+        alert(`invaild input! You have ${guessesRemaining} guesses remaining.`);
+      }
     }
-    else if (i === favVideogame.length) {
-      alert(videogameGuess + ` is not one of my favorite video games. You have ${guessesRemaining} guesses remaining!`);
-    }
-    else {
-      alert(`invaild input! You have ${guessesRemaining} guesses remaining.`);
-    }
+    if (guessIsCorrect === true) { break; }
   }
-  if (guessIsCorrect === true) { break; }
 }
-
+favVideogame();
 alert(firstName + ` scored ${correctAnswer} out of 7 questions correctly.`);
