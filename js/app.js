@@ -6,9 +6,8 @@ let firstName = prompt('What is your first name?');
 console.log(firstName);
 alert(firstName + ', welcome to a little sneak peek on my life!');
 
-
 let nameTrina = prompt('Is my name Trina?').toLowerCase();
-if (nameTrina === 'yes' || nameTrina === 'y'){
+if (nameTrina === 'yes' || nameTrina === 'y') {
   // console.log('Yes, my name is Trina!');
   alert('Yes, my name is Trina!');
   correctAnswer++;
@@ -20,8 +19,10 @@ if (nameTrina === 'yes' || nameTrina === 'y'){
   alert('You need to answer with a \'yes\' or a \'no\'');
 }
 
+
+
 let ownDogs = prompt('Do I own dogs?').toLowerCase();
-if (ownDogs === 'yes' || ownDogs === 'y'){
+if (ownDogs === 'yes' || ownDogs === 'y') {
   // console.log('Yes, I do own dogs, 2 of them in fact!');
   alert('Yes, I do own dogs, 2 of them in fact!');
   correctAnswer++;
@@ -34,7 +35,7 @@ if (ownDogs === 'yes' || ownDogs === 'y'){
 }
 
 let livesInSeattle = prompt('Do I live in Seattle?').toLowerCase();
-if (livesInSeattle === 'yes' || livesInSeattle === 'y'){
+if (livesInSeattle === 'yes' || livesInSeattle === 'y') {
   // console.log('Yes, I do live in Seattle');
   alert('Yes, I do live in Seattle');
   correctAnswer++;
@@ -44,7 +45,7 @@ if (livesInSeattle === 'yes' || livesInSeattle === 'y'){
 }
 
 let hideSnack = prompt('Have I ever hidden a snack so that nobody else would find it and eat it first?').toLowerCase();
-if (hideSnack === 'yes' || hideSnack === 'y'){
+if (hideSnack === 'yes' || hideSnack === 'y') {
   // console.log('If you grew up with other siblings, you would have definitely hidden a snack!');
   alert('If you grew up with other siblings, you would have definitely hidden a snack!');
   correctAnswer++;
@@ -57,7 +58,7 @@ if (hideSnack === 'yes' || hideSnack === 'y'){
 }
 
 let cartoonCrush = prompt('Did I ever have a crush on a cartoon character?').toLowerCase();
-if (cartoonCrush === 'yes' || cartoonCrush === 'y'){
+if (cartoonCrush === 'yes' || cartoonCrush === 'y') {
   // console.log('Of course I have, have you ever seen Tadashi Hamada from Big Hero 6??!');
   alert('Of course I have, have you ever seen Tadashi Hamada from Big Hero 6??!');
   correctAnswer++;
@@ -71,64 +72,52 @@ if (cartoonCrush === 'yes' || cartoonCrush === 'y'){
 
 let attemptsRemaining = 4;
 
-while (attemptsRemaining >= 1)
-{
+while (attemptsRemaining >= 1) {
   attemptsRemaining--;
   let ageGuess = prompt('Guess my age!');
   //parseInt changes the data guesses into a number which makes the === vaild
   ageGuess = parseInt(ageGuess);
-  if(ageGuess === 21)
-  {
+  if (ageGuess === 21) {
     alert('You guessed it correctly! I am 21!');
     correctAnswer++;
     break;
   }
-  else if (ageGuess > 21)
-  {
+  else if (ageGuess > 21) {
     alert(`Too high! You have ${attemptsRemaining} attempts remaining!`);
   }
-  else if (ageGuess < 21 && ageGuess > 0)
-  {
+  else if (ageGuess < 21 && ageGuess > 0) {
     alert(`Too low! You have ${attemptsRemaining} attempts remaining!`);
   }
-  else
-  {
+  else {
     alert(`invaild input! You have ${attemptsRemaining} attempts remaining!`);
   }
-  if(attemptsRemaining === 0)
-  {
+  if (attemptsRemaining === 0) {
     alert('You are out of attempts! The correct answer was 21!');
   }
 
 }
 
-let favVideogame = ['valorant','genshin impact','minecraft'];
+let favVideogame = ['valorant', 'genshin impact', 'minecraft'];
 let guessesRemaining = 4;
 let guessIsCorrect = false;
-while (guessesRemaining && !guessIsCorrect)
-{
+while (guessesRemaining && !guessIsCorrect) {
   guessesRemaining--;
   let videogameGuess = prompt('Can you guess one of my favorite video games?').toLowerCase();
-  for(let i = 0; i < favVideogame.length; i++)
-  {
-    if (videogameGuess === favVideogame[i])
-    {
+  for (let i = 0; i < favVideogame.length; i++) {
+    if (videogameGuess === favVideogame[i]) {
       alert(videogameGuess + ' is one of my favorite video games!');
       correctAnswer++;
       guessIsCorrect = true;
       break;
     }
-    else if (i === favVideogame.length)
-    {
+    else if (i === favVideogame.length) {
       alert(videogameGuess + ` is not one of my favorite video games. You have ${guessesRemaining} guesses remaining!`);
     }
-    else
-    {
+    else {
       alert(`invaild input! You have ${guessesRemaining} guesses remaining.`);
     }
   }
-  if (guessIsCorrect === true)
-  {break;}
+  if (guessIsCorrect === true) { break; }
 }
 
-alert(firstName +` scored ${correctAnswer} out of 7 questions correctly.`);
+alert(firstName + ` scored ${correctAnswer} out of 7 questions correctly.`);
