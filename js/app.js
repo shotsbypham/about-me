@@ -63,19 +63,21 @@ function hideSnack() {
   }
 }
 hideSnack();
-let cartoonCrush = prompt('Did I ever have a crush on a cartoon character?').toLowerCase();
-if (cartoonCrush === 'yes' || cartoonCrush === 'y') {
-  // console.log('Of course I have, have you ever seen Tadashi Hamada from Big Hero 6??!');
-  alert('Of course I have, have you ever seen Tadashi Hamada from Big Hero 6??!');
-  correctAnswer++;
-} else if (cartoonCrush === 'no' || cartoonCrush === 'n') {
-  // console.log('You are very very wrong... look up Tadashi Hamada and you will see why.');
-  alert('You are very very wrong... look up Tadashi Hamada and you will see why.');
-} else {
-  // console.log('You need to answer with a \'yes\' or a \'no\'');
-  alert('You need to answer with a \'yes\' or a \'no\'');
+function cartoonCrush() {
+  let cartoonCrush = prompt('Did I ever have a crush on a cartoon character?').toLowerCase();
+  if (cartoonCrush === 'yes' || cartoonCrush === 'y') {
+    // console.log('Of course I have, have you ever seen Tadashi Hamada from Big Hero 6??!');
+    alert('Of course I have, have you ever seen Tadashi Hamada from Big Hero 6??!');
+    correctAnswer++;
+  } else if (cartoonCrush === 'no' || cartoonCrush === 'n') {
+    // console.log('You are very very wrong... look up Tadashi Hamada and you will see why.');
+    alert('You are very very wrong... look up Tadashi Hamada and you will see why.');
+  } else {
+    // console.log('You need to answer with a \'yes\' or a \'no\'');
+    alert('You need to answer with a \'yes\' or a \'no\'');
+  }
 }
-
+cartoonCrush();
 let attemptsRemaining = 4;
 
 while (attemptsRemaining >= 1) {
