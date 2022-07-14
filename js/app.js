@@ -36,16 +36,18 @@ function ownDogs() {
   }
 }
 ownDogs();
-let livesInSeattle = prompt('Do I live in Seattle?').toLowerCase();
-if (livesInSeattle === 'yes' || livesInSeattle === 'y') {
-  // console.log('Yes, I do live in Seattle');
-  alert('Yes, I do live in Seattle');
-  correctAnswer++;
-} else {
-  // console.log('Sorry, you are wrong. I do live in Seattle.');
-  alert('Sorry, you are wrong. I do live in Seattle.');
+function livesInSeattle() {
+  let livesInSeattle = prompt('Do I live in Seattle?').toLowerCase();
+  if (livesInSeattle === 'yes' || livesInSeattle === 'y') {
+    // console.log('Yes, I do live in Seattle');
+    alert('Yes, I do live in Seattle');
+    correctAnswer++;
+  } else {
+    // console.log('Sorry, you are wrong. I do live in Seattle.');
+    alert('Sorry, you are wrong. I do live in Seattle.');
+  }
 }
-
+livesInSeattle();
 let hideSnack = prompt('Have I ever hidden a snack so that nobody else would find it and eat it first?').toLowerCase();
 if (hideSnack === 'yes' || hideSnack === 'y') {
   // console.log('If you grew up with other siblings, you would have definitely hidden a snack!');
