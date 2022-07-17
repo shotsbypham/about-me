@@ -9,7 +9,7 @@ My about me page is a self-introduction of who I am. It includes hobbies, educat
 
 ### Links and Resources
 
-* No 
+* Mainly just used class notes and my imagination to build this page.
 
 ### Reflections and Comments
 
